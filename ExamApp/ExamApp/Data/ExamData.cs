@@ -55,6 +55,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "One-to-One" }, { "B", "One-to-Many" }, { "C", "Many-to-Many" }, { "D", "Many-to-One only" } },
                 CorrectLetter = "B"
             },
+            new QuestionAnswer {
+                Number = 8,
+                Topic = "Relational Data Modeling",
+                Question = "In the example \"public int SectionId { get; set; } / public Section Section { get; set; }\", what is SectionId?",
+                Options = new Dictionary<string, string> { { "A", "Primary key of Student" }, { "B", "Foreign key referencing Section" }, { "C", "Navigation property" }, { "D", "Database connection string" } },
+                CorrectLetter = "B"
+            },
         };
     }
 }
