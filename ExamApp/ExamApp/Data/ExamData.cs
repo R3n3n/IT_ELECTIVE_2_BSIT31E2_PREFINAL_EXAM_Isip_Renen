@@ -139,6 +139,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "Display the student's information anyway" }, { "B", "Display a Not Found (404) response/page" }, { "C", "Delete Student 999" }, { "D", "Create Student 999 automatically" } },
                 CorrectLetter = "B"
             },
+            new QuestionAnswer {
+                Number = 20,
+                Topic = "In-Memory Data & CRUD",
+                Question = "A student already belongs to Section A for a particular subject. The application attempts to assign the same student to Section A again. What is the primary concern?",
+                Options = new Dictionary<string, string> { { "A", "Data integrity" }, { "B", "HTML formatting" }, { "C", "CSS inheritance" }, { "D", "Razor syntax" } },
+                CorrectLetter = "A"
+            },
         };
     }
 }
