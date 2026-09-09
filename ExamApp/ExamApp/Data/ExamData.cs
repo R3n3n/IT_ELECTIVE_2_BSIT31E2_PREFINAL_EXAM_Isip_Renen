@@ -97,6 +97,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "Database-level validation" }, { "B", "Client-side validation" }, { "C", "Server-side validation" }, { "D", "EF Core migration validation" } },
                 CorrectLetter = "B"
             },
+            new QuestionAnswer {
+                Number = 14,
+                Topic = "Data Validation & ModelState",
+                Question = "Why is server-side validation still necessary if client-side validation exists?",
+                Options = new Dictionary<string, string> { { "A", "Client-side validation can be bypassed" }, { "B", "Client-side validation automatically modifies the database" }, { "C", "Server-side validation only works with SQLite" }, { "D", "Client-side validation cannot display messages" } },
+                CorrectLetter = "A"
+            },
         };
     }
 }
