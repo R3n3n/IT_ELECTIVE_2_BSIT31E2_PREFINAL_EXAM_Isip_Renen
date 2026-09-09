@@ -76,6 +76,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "Delete the Section table" }, { "B", "Load related Section data together with Students" }, { "C", "Create a new Student" }, { "D", "Validate Student input" } },
                 CorrectLetter = "B"
             },
+            new QuestionAnswer {
+                Number = 11,
+                Topic = "Conceptual Data Architecture",
+                Question = "Why might a ViewModel be used when displaying Student and Section information?",
+                Options = new Dictionary<string, string> { { "A", "To replace the database" }, { "B", "To combine or shape the data specifically needed by the view" }, { "C", "To automatically create database tables" }, { "D", "To prevent controllers from using LINQ" } },
+                CorrectLetter = "B"
+            },
         };
     }
 }
