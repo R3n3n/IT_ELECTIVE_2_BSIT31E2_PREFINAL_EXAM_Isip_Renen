@@ -20,6 +20,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "Code-First" }, { "B", "Database-First" }, { "C", "Model-First" }, { "D", "Controller-First" } },
                 CorrectLetter = "B"
             },
+            new QuestionAnswer {
+                Number = 3,
+                Topic = "EF Core Basics",
+                Question = "What is the primary purpose of Entity Framework Core?",
+                Options = new Dictionary<string, string> { { "A", "To create HTML pages automatically" }, { "B", "To replace the MVC Controller" }, { "C", "To map objects in code to relational database data" }, { "D", "To replace the C# compiler" } },
+                CorrectLetter = "C"
+            },
         };
     }
 }
