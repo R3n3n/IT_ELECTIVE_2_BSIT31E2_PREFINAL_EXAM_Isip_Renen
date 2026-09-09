@@ -48,6 +48,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "Program.cs only" }, { "B", "appsettings.json" }, { "C", "Index.cshtml" }, { "D", "Student.cs" } },
                 CorrectLetter = "B"
             },
+            new QuestionAnswer {
+                Number = 7,
+                Topic = "Relational Data Modeling",
+                Question = "A Student belongs to exactly one Section, while a Section can contain many students. What type of relationship is this?",
+                Options = new Dictionary<string, string> { { "A", "One-to-One" }, { "B", "One-to-Many" }, { "C", "Many-to-Many" }, { "D", "Many-to-One only" } },
+                CorrectLetter = "B"
+            },
         };
     }
 }
