@@ -1,8 +1,20 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model List<QuestionAnswer>
+@{
+    ViewData["Title"] = "All Answers";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<p class="intro">
+    IT Elective 2 &ndash; Web Systems and Technologies Prefinal Examination.
+    This booklet contains @Model.Count multiple-choice items. Click any number card
+    below to open that question and see the choices with my selected answer.
+</p>
+
+<div class="qgrid">
+    @foreach (var item in Model)
+    {
+        <a class="qcard" asp-action="Details" asp-route-id="@item.Number">
+            <span class="qcard-num">@item.Number</span>
+            <span class="qcard-topic">@item.Topic</span>
+        </a>
+    }
 </div>

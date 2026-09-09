@@ -1,0 +1,59 @@
+﻿@model QuestionAnswer
+@{
+    ViewData["Title"] = $"Item #{Model.Number}";
+    int total = ViewBag.Total;
+    int? prevId = ViewBag.PrevId;
+    int? nextId = ViewBag.NextId;
+}
+
+<a class="back-link" asp-action="Index">&larr; Back to all answers</a>
+
+<div class="detail-wrap">
+    <p class="progress-label">Question @Model.Number of @total</p>
+    <div class="progress-track">
+        <div class="progress-fill" style="width:@(Model.Number * 100 / total)%"></div>
+    </div>
+
+    <div class="card card-focus">
+        <div class="card-head">
+            <span class="qnum-badge">#@Model.Number</span>
+            <span class="topic-pill">@Model.Topic</span>
+        </div>
+        <p class="question">@Model.Question</p>
+        <ul class="options">
+            @foreach (var opt in Model.Options)
+            {
+                <li class="@(opt.Key == Model.CorrectLetter ? "correct" : "")">
+                    <span class="letter">@opt.Key</span>
+                    <span class="opt-text">@opt.Value</span>
+                    @if (opt.Key == Model.CorrectLetter)
+                    {
+                        <span class="check">&#10003; My Answer</span>
+                    }
+                </li>
+            }
+        </ul>
+    </div>
+
+    <div class="detail-nav">
+        @if (prevId.HasValue)
+        {
+            <a class="nav-btn" asp-action="Details" asp-route-id="@prevId">&larr; Question @prevId</a>
+        }
+        else
+        {
+            <span class="nav-btn disabled">&larr; Question @prevId</span>
+        }
+
+        <a class="nav-btn nav-btn-ghost" asp-action="Index">All questions</a>
+
+        @if (nextId.HasValue)
+        {
+            <a class="nav-btn" asp-action="Details" asp-route-id="@nextId">Question @nextId &rarr;</a>
+        }
+        else
+        {
+            <span class="nav-btn disabled">Question @nextId &rarr;</span>
+        }
+    </div>
+</div>
