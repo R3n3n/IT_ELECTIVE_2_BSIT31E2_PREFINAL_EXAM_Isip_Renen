@@ -27,6 +27,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "To create HTML pages automatically" }, { "B", "To replace the MVC Controller" }, { "C", "To map objects in code to relational database data" }, { "D", "To replace the C# compiler" } },
                 CorrectLetter = "C"
             },
+            new QuestionAnswer {
+                Number = 4,
+                Topic = "EF Core Basics",
+                Question = "Which EF Core component is primarily responsible for communicating with the database?",
+                Options = new Dictionary<string, string> { { "A", "DbContext" }, { "B", "DbSetView" }, { "C", "ControllerContext" }, { "D", "RazorContext" } },
+                CorrectLetter = "A"
+            },
         };
     }
 }
