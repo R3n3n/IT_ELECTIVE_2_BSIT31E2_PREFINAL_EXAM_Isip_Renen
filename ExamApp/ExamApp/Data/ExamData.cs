@@ -125,6 +125,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "To create navigation properties" }, { "B", "To catch and handle exceptions that may occur during execution" }, { "C", "To generate database tables" }, { "D", "To perform client-side validation" } },
                 CorrectLetter = "B"
             },
+            new QuestionAnswer {
+                Number = 18,
+                Topic = "Introduction to SQL",
+                Question = "Which middleware is commonly used in ASP.NET Core for centralized exception handling?",
+                Options = new Dictionary<string, string> { { "A", "UseDatabase()" }, { "B", "UseExceptionHandler()" }, { "C", "UseValidationHandler()" }, { "D", "UseMvcDatabase()" } },
+                CorrectLetter = "B"
+            },
         };
     }
 }
