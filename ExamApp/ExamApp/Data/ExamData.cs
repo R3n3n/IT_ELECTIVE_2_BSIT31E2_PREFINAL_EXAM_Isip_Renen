@@ -83,6 +83,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "To replace the database" }, { "B", "To combine or shape the data specifically needed by the view" }, { "C", "To automatically create database tables" }, { "D", "To prevent controllers from using LINQ" } },
                 CorrectLetter = "B"
             },
+            new QuestionAnswer {
+                Number = 12,
+                Topic = "Razor Syntax & Dynamic Rendering",
+                Question = "Consider the query \"var students = _context.Students.Include(s => s.Section).ToList();\". What is the main benefit of Include(s => s.Section)?",
+                Options = new Dictionary<string, string> { { "A", "It loads the related Section navigation property" }, { "B", "It creates a Section object manually" }, { "C", "It removes the foreign key" }, { "D", "It prevents the query from accessing the database" } },
+                CorrectLetter = "A"
+            },
         };
     }
 }
