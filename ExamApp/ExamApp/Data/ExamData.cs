@@ -41,6 +41,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "Deletes the database" }, { "B", "Creates a new MVC project" }, { "C", "Generates EF Core models and a DbContext from an existing database" }, { "D", "Starts the MVC application" } },
                 CorrectLetter = "C"
             },
+            new QuestionAnswer {
+                Number = 6,
+                Topic = "Relational Data Modeling",
+                Question = "Where is a database connection string commonly stored in an ASP.NET Core MVC application?",
+                Options = new Dictionary<string, string> { { "A", "Program.cs only" }, { "B", "appsettings.json" }, { "C", "Index.cshtml" }, { "D", "Student.cs" } },
+                CorrectLetter = "B"
+            },
         };
     }
 }
