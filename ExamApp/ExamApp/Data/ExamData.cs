@@ -69,6 +69,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "It stores the database password" }, { "B", "It represents a relationship to another entity" }, { "C", "It creates a new database" }, { "D", "It validates the student's name" } },
                 CorrectLetter = "B"
             },
+            new QuestionAnswer {
+                Number = 10,
+                Topic = "Conceptual Data Architecture",
+                Question = "What does .Include() generally allow EF Core to do?",
+                Options = new Dictionary<string, string> { { "A", "Delete the Section table" }, { "B", "Load related Section data together with Students" }, { "C", "Create a new Student" }, { "D", "Validate Student input" } },
+                CorrectLetter = "B"
+            },
         };
     }
 }
