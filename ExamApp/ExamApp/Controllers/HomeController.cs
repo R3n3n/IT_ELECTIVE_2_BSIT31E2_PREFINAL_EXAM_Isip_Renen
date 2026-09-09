@@ -1,6 +1,6 @@
+using ExamApp.Data;
 using ExamApp.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace ExamApp.Controllers
 {
@@ -8,18 +8,23 @@ namespace ExamApp.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            List<QuestionAnswer> model = ExamData.Questions;
+            return View(model);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Details(int id)
         {
-            return View();
+            QuestionAnswer? item = ExamData.Questions.FirstOrDefault(q => q.Number == id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+            return View(item);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
     }
 }
