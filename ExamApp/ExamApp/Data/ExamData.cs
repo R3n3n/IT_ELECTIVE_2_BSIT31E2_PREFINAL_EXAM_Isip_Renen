@@ -62,6 +62,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "Primary key of Student" }, { "B", "Foreign key referencing Section" }, { "C", "Navigation property" }, { "D", "Database connection string" } },
                 CorrectLetter = "B"
             },
+            new QuestionAnswer {
+                Number = 9,
+                Topic = "Conceptual Data Architecture",
+                Question = "What is the purpose of a navigation property such as \"public Section Section { get; set; }\"?",
+                Options = new Dictionary<string, string> { { "A", "It stores the database password" }, { "B", "It represents a relationship to another entity" }, { "C", "It creates a new database" }, { "D", "It validates the student's name" } },
+                CorrectLetter = "B"
+            },
         };
     }
 }
