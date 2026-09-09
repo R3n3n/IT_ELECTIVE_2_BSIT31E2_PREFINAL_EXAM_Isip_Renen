@@ -118,6 +118,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "It protects data integrity even if application-level validation is bypassed" }, { "B", "It makes Razor Views render faster" }, { "C", "It removes the need for a Controller" }, { "D", "It automatically creates a ViewModel" } },
                 CorrectLetter = "A"
             },
+            new QuestionAnswer {
+                Number = 17,
+                Topic = "Introduction to SQL",
+                Question = "What is the purpose of a try...catch block in a controller?",
+                Options = new Dictionary<string, string> { { "A", "To create navigation properties" }, { "B", "To catch and handle exceptions that may occur during execution" }, { "C", "To generate database tables" }, { "D", "To perform client-side validation" } },
+                CorrectLetter = "B"
+            },
         };
     }
 }
