@@ -34,6 +34,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "DbContext" }, { "B", "DbSetView" }, { "C", "ControllerContext" }, { "D", "RazorContext" } },
                 CorrectLetter = "A"
             },
+            new QuestionAnswer {
+                Number = 5,
+                Topic = "EF Core Basics",
+                Question = "What does the command \"dotnet ef dbcontext scaffold \\\"ConnectionString\\\" Microsoft.EntityFrameworkCore.SqlServer -o Models\" primarily do?",
+                Options = new Dictionary<string, string> { { "A", "Deletes the database" }, { "B", "Creates a new MVC project" }, { "C", "Generates EF Core models and a DbContext from an existing database" }, { "D", "Starts the MVC application" } },
+                CorrectLetter = "C"
+            },
         };
     }
 }
