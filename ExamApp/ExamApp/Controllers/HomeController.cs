@@ -19,6 +19,12 @@ namespace ExamApp.Controllers
             {
                 return NotFound();
             }
+
+            int total = ExamData.Questions.Count;
+            ViewBag.Total = total;
+            ViewBag.PrevId = item.Number > 1 ? item.Number - 1 : (int?)null;
+            ViewBag.NextId = item.Number < total ? item.Number + 1 : (int?)null;
+
             return View(item);
         }
 
