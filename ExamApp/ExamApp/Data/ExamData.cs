@@ -90,6 +90,13 @@ namespace ExamApp.Data
                 Options = new Dictionary<string, string> { { "A", "It loads the related Section navigation property" }, { "B", "It creates a Section object manually" }, { "C", "It removes the foreign key" }, { "D", "It prevents the query from accessing the database" } },
                 CorrectLetter = "A"
             },
+            new QuestionAnswer {
+                Number = 13,
+                Topic = "Data Validation & ModelState",
+                Question = "Which type of validation occurs in the browser before a request is sent to the server?",
+                Options = new Dictionary<string, string> { { "A", "Database-level validation" }, { "B", "Client-side validation" }, { "C", "Server-side validation" }, { "D", "EF Core migration validation" } },
+                CorrectLetter = "B"
+            },
         };
     }
 }
